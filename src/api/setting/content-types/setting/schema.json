@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "Setting"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "favicon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "primaryColor": {
+      "type": "string",
+      "required": true,
+      "regex": "^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+    },
+    "seccoundaryColor": {
+      "type": "string",
+      "required": true,
+      "regex": "^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+    }
+  }
+}
